@@ -5,7 +5,7 @@ on:
 jobs:
   run-build:
     runs-on: ubuntu-20.04
-    if: ${{ false }}
+    # if: ${{ false }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
 
   run-testDebugUnitTest:
     runs-on: ubuntu-20.04
-    if: github.event.pull_request.head.repo.full_name != github.repository && github.actor != 'MickeyMoz'
+    # if: github.event.pull_request.head.repo.full_name != github.repository && github.actor != 'MickeyMoz'
 
     steps:
       - name: Checkout repository
@@ -42,7 +42,7 @@ jobs:
 
   run-detekt:
     runs-on: ubuntu-20.04
-    if: github.event.pull_request.head.repo.full_name != github.repository && github.actor != 'MickeyMoz'
+    # if: github.event.pull_request.head.repo.full_name != github.repository && github.actor != 'MickeyMoz'
 
     steps:
       - name: Checkout repository
@@ -66,7 +66,7 @@ jobs:
 
   run-ktlint:
     runs-on: ubuntu-20.04
-    if: github.event.pull_request.head.repo.full_name != github.repository && github.actor != 'MickeyMoz'
+    # if: github.event.pull_request.head.repo.full_name != github.repository && github.actor != 'MickeyMoz'
 
     steps:
       - name: Checkout repository
@@ -85,7 +85,7 @@ jobs:
 
   run-lintDebug:
     runs-on: ubuntu-20.04
-    if: github.event.pull_request.head.repo.full_name != github.repository && github.actor != 'MickeyMoz'
+    # if: github.event.pull_request.head.repo.full_name != github.repository && github.actor != 'MickeyMoz'
 
     steps:
       - name: Checkout repository
@@ -109,7 +109,7 @@ jobs:
 
   run-ui:
     runs-on: macos-11
-    if: ${{ false }}
+    # if: ${{ false }}
     timeout-minutes: 60
     strategy:
       matrix:
