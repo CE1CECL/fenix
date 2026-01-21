@@ -12,7 +12,7 @@ import java.util.Locale
 object Config {
     // Synchronized build configuration for all modules
     const val compileSdkVersion = 33
-    const val minSdkVersion = 21
+    const val minSdkVersion = 15
     const val targetSdkVersion = 32
 
     @JvmStatic
